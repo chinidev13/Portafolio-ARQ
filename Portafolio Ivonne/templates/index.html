@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-editorial" style="padding: 100px 8%;">
+    <p class="subtitulo">Selección de Proyectos 2019 — 2025</p>
+    <h1 style="font-family: 'Cormorant Garamond'; font-size: 4rem; font-weight: 300;">Arquitectura que respeta la historia y el contexto urbano.</h1>
+</section>
+
+<div class="editorial-grid">
+    <div class="item-revista grande">
+        <img src="{{ url_for('static', filename='images/21.png') }}">
+        <p class="subtitulo">Taller IX | Villa El Salvador</p>
+        <h2>Centro Creativo y Flujos Urbanos</h2>
+    </div>
+
+    <div class="item-revista">
+        <img src="{{ url_for('static', filename='images/13.png') }}">
+        <p class="subtitulo">Taller V | Ventanilla</p>
+        <h2>Resiliencia en Humedales</h2>
+    </div>
+
+    <div class="item-revista" style="margin-top: 100px;">
+        <img src="{{ url_for('static', filename='images/8.png') }}">
+        <p class="subtitulo">Análisis | Patrimonio</p>
+        <h2>Conservación Histórica</h2>
+    </div>
+</div>
+{% endblock %}

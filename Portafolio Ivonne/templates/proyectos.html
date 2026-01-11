@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{%block content %}
+<section class="proyectos-header">
+    <h2> Galeria de Proyectos</h2>
+    <p>Cronologia academica de 2019 - 2025</p>
+</section>
+
+<div class="grid-proyectos">
+    <div class="tarjeta-proyecto">
+        <img src="{{ url_for('static', filename='images/21.png') }}" alt="Taller IX">
+        <div class="info">
+            <h3>Taller IX: Centro Creativo</h3>
+            <p>Villa El Salvador | 20,001 m²</p>
+        </div>
+    </div>
+
+ <div class="tarjeta-proyecto">
+        <img src="{{ url_for('static', filename='images/10.png') }}" alt="Taller V">
+        <div class="info">
+            <h3>Taller V: Humedales</h3>
+            <p>Ventanilla | Arquitectura Ambiental</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
